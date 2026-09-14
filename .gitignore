@@ -1,0 +1,26 @@
+# Visual Studio user file
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio build/cache folders
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Oo]ut/
+[Pp]ublish/
+[Rr]esults/
+
+# .NET Core / Test Results
+[Tt]est[Rr]esults/
+[Bb]uild/
+
+# Visual Studio Code cache (nếu có dùng VS Code)
+.vscode/
+
+# Thư mục hệ thống ẩn
+.DS_Store
+Thumbs.db
