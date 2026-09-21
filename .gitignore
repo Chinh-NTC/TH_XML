@@ -21,6 +21,9 @@
 # Visual Studio Code cache (nếu có dùng VS Code)
 .vscode/
 
+# Visual Studio hidden cache/settings directory
+.vs/
+
 # Thư mục hệ thống ẩn
 .DS_Store
 Thumbs.db
