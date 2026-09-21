@@ -1,4 +1,4 @@
-﻿namespace Bai6
+﻿namespace Bai7
 {
     partial class Form1
     {
@@ -17,7 +17,10 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem listCustomerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportCustomerHTMLToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listItemToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportItemHTMLToolStripMenuItem;
+
         private System.Windows.Forms.ComboBox cboOrder;
         private System.Windows.Forms.ComboBox cboCCode;
         private System.Windows.Forms.Label lblCustomer;
@@ -33,7 +36,10 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.listCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportCustomerHTMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportItemHTMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
             this.cboOrder = new System.Windows.Forms.ComboBox();
             this.cboCCode = new System.Windows.Forms.ComboBox();
             this.lblCustomer = new System.Windows.Forms.Label();
@@ -44,6 +50,7 @@
             this.lblHeaderTitle = new System.Windows.Forms.Label();
             this.lblTotalText = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
+
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
@@ -63,17 +70,35 @@
             // 
             // listCustomerToolStripMenuItem
             // 
+            this.listCustomerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportCustomerHTMLToolStripMenuItem});
             this.listCustomerToolStripMenuItem.Name = "listCustomerToolStripMenuItem";
-            this.listCustomerToolStripMenuItem.Size = new System.Drawing.Size(107, 21);
+            this.listCustomerToolStripMenuItem.Size = new System.Drawing.Size(120, 21);
             this.listCustomerToolStripMenuItem.Text = "Danh sách khách";
             this.listCustomerToolStripMenuItem.Click += new System.EventHandler(this.listCustomerToolStripMenuItem_Click);
             // 
+            // exportCustomerHTMLToolStripMenuItem
+            // 
+            this.exportCustomerHTMLToolStripMenuItem.Name = "exportCustomerHTMLToolStripMenuItem";
+            this.exportCustomerHTMLToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.exportCustomerHTMLToolStripMenuItem.Text = "Chuyển đổi HTML";
+            this.exportCustomerHTMLToolStripMenuItem.Click += new System.EventHandler(this.exportCustomerHTMLToolStripMenuItem_Click);
+            // 
             // listItemToolStripMenuItem
             // 
+            this.listItemToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportItemHTMLToolStripMenuItem});
             this.listItemToolStripMenuItem.Name = "listItemToolStripMenuItem";
-            this.listItemToolStripMenuItem.Size = new System.Drawing.Size(117, 21);
+            this.listItemToolStripMenuItem.Size = new System.Drawing.Size(135, 21);
             this.listItemToolStripMenuItem.Text = "Danh sách mặt hàng";
             this.listItemToolStripMenuItem.Click += new System.EventHandler(this.listItemToolStripMenuItem_Click);
+            // 
+            // exportItemHTMLToolStripMenuItem
+            // 
+            this.exportItemHTMLToolStripMenuItem.Name = "exportItemHTMLToolStripMenuItem";
+            this.exportItemHTMLToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.exportItemHTMLToolStripMenuItem.Text = "Chuyển đổi HTML";
+            this.exportItemHTMLToolStripMenuItem.Click += new System.EventHandler(this.exportItemHTMLToolStripMenuItem_Click);
             // 
             // cboOrder
             // 

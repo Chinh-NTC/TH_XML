@@ -27,12 +27,13 @@ namespace Bai6
             InitializeComponent();
             try
             {
-                InitCboOrderNo();
-                InitCboCCode();
+                InitCboOrderNo(); // Đọc file master.xml
+                InitCboCCode();   // Đọc file customer.xml
+                lblDate.Text = today; // Cập nhật ngày hiện tại nằm ở đây!
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khởi tạo (Kiểm tra lại file XML trong thư mục bin/debug/data): " + ex.Message);
+                MessageBox.Show("Lỗi khởi tạo: " + ex.Message);
             }
         }
 
