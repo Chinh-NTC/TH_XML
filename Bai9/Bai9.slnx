@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../Bai10/Bai10.csproj" />
   <Project Path="Bai9.csproj" />
 </Solution>
